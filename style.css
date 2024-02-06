@@ -1,64 +1,8 @@
-/* a. sets all text elements to be color: red; */
-* {
-    color: red;
-}
-
-body {
-  background-image: url('https://i.pinimg.com/originals/86/db/24/86db242b0197c7d03d1166090f33cb9f.jpg');
-  background-repeat: no-repeat;
-  background-size cover;
- 
-}
-
-/* b. set all paragraph elements to be color: blue; */
-p {
-    color: blue;
-    font-family: cursive;
-    border: dotted;
-    border-color: black;
-    padding: 10px;
-    margin: 90px;
-  font-size: 60px;
-  background-color: tan;
-}
-
-.testing {
-  display: flex;
-  flex-direction: row; /* Flex items will be in a row (horizontal) */
-  flex-wrap: wrap; /* Allow flex items to wrap onto the next line */
-  justify-content: space-around; /* Distribute items with space around them horizontally */
-  align-items: center; /* Center items vertically */
-  align-content: space-between; /* Distribute lines with space between them vertically */
+html {
   height: 100%;
-
+  width: 100%;
 }
 
-/* c. set an html class called ‘color-class’ and add a declaration for color: purple; */
-.color-class {
-    color: purple;
-}
-
-/* d. set an html id called ‘color-id’ and add a declaration for color: green; */
-#color-id {
-    color: green;
-}
-
-/* e. set all children p elements of the color-class to be color: cyan; */
-.color-class > p {
-    color: cyan;
-}
-
-/* f. set all descendant span elements of color-class to be color: yellow; */
-.color-class span {
-    color: yellow;
-}
-
-/* g. set all adjacent sibling span elements of color-class to be color: pink; */
-.color-class + span {
-    color: pink;
-}
-
-/* h. set all general sibling div elements of ‘color-class’ to be color: navy; */
-.color-class ~ div {
-    color: navy;
+h1 {
+  font-family: raleway;
 }
