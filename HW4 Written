@@ -1,0 +1,32 @@
+//Homework 4 Javascript
+//1. What is javascript? How does an interpreted programming language differ from a
+//compiled language?
+
+//Javascript is a high-level, interpreted language that is used for web development especially partnered with HTML and CSS. Javascript allows the web pages to be interactive, responsive, amd dynamic. 
+//An interpreted language - executes line by line by interpreter. 
+//Compiled Language - code is translated into machine code (binary code) by a compiler before the code is executed. C++ is an example of this. Compiled languages are usually better performance and more efficient. 
+
+
+//2. What is the difference between var, let, and const when declaring variables?
+//Var = are function scoped / globally scoped, NOT block scoped. 
+//Can be reassigned or redeclared within their scope. (might need to be redeclared).
+
+//Let = variables declared with “let’ are block scoped.
+//Which means only accessible within the block in which they are declared.
+//Can be reassigned, not redeclared in same scope. (might need to reassigned)
+
+//Const = block scoped. Cannot be changed once assigned,(should not be reassigned).
+
+
+//3. What are anonymous functions? Higher order functions?
+//Anonymous functions is a function without a name. Not declared using ‘function’ keyword with identifier, its define inline exactly where theyre needed. 
+//Higher Order functions takes another function as an argument and returns a function.
+//First class citizens, means they can be treated like any other Var, this is the part that allows it to pass functions and returns them. Also, objects inhe
+//Powerful because of the flexibility and reuseability of them.
+
+//4. Define objects in JavaScript and how they are different from objects in more traditional
+//OOP languages.
+//Objects in Javascript are a data type. An object is a collection of properties, this allows us to  have a flexible and convenient way to group related informatio, properties, or values together into a single entity. For example, grouping together Name, Age, and Zodiac Sign. For example, arrays are objects! Additionally, there are “global objects” which can be accessed. 
+//This differers from objects in more traditional OOP languages because other languages, objects are usually instances of classes, and there is a class hierarchy that controls how objects are accessed.They are also controlled by keywords like “public” “private” to control their access. In other words, objects here have a very different approach and implementation. 
+
+
