@@ -1,0 +1,81 @@
+const cats = [
+    {
+        name: 'Charlie',
+        adoptionStatus: 'available'
+    },
+    {
+        name: 'Lily',
+        adoptionStatus: 'not-available'
+    },
+    {
+        name: 'Coco',
+        adoptionStatus: 'available'
+    },
+    {
+        name: 'Oreo',
+        adoptionStatus: 'not-available'
+    },
+    {
+        name: 'Luna',
+        adoptionStatus: 'available'
+    },
+    {
+        name: 'Milo',
+        adoptionStatus: 'available'
+    },
+    {
+        name: 'Lola',
+        adoptionStatus: 'not-available'
+    },
+    {
+        name: 'Leo',
+        adoptionStatus: 'available'
+    },
+    {
+        name: 'Willow',
+        adoptionStatus: 'available'
+    },
+    {
+        name: 'Bella',
+        adoptionStatus: 'not-available'
+    },
+    {
+        name: 'Max',
+        adoptionStatus: 'available'
+    },
+    {
+        name: 'Cleo',
+        adoptionStatus: 'available'
+    },
+    {
+        name: 'Lucy',
+        adoptionStatus: 'not-available'
+    },
+    {
+        name: 'Daisy',
+        adoptionStatus: 'available'
+    },
+];
+
+// Using a for loop
+console.log("Using for loop:");
+for (let i = 0; i < cats.length; i++) {
+    console.log(cats[i].name + " - " + cats[i].adoptionStatus);
+}
+
+//forEach 
+console.log("\nUsing forEach method:");
+cats.forEach(cat => {
+    console.log(cat.name + " - " + cat.adoptionStatus);
+});
+
+//for...of loop
+console.log("\nUsing for...of loop:");
+for (const cat of cats) {
+    console.log(cat.name + " - " + cat.adoptionStatus);
+}
+//map
+console.log("\nUsing map method:");
+cats.map(cat => {
+    console.log(cat.name + " - " + cat.adoptionStatus);
+});
