@@ -1,0 +1,8 @@
+//1
+// Expression (example)
+let isSunny = true;
+
+// Variable assignment using ternary operator
+let weatherForecast = isSunny ? "It's sunny today!" : "It's not sunny today.";
+
+console.log(weatherForecast);
