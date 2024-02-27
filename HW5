@@ -1,8 +1,8 @@
 //Question 1
 // Expression (example)
-let isItFunny = true;
+let isRaining = false;
 
 // Variable assignment using ternary operator
-let ComedyShow = isItFunny ? "It's funny!" : "It's not funny.";
+let activity = isRaining ? "Grab an umbrella" : "Dance in the rain";
 
-console.log(ComedyShow);
+console.log(activity);
