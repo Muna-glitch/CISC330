@@ -6,3 +6,129 @@ let isRaining = false;
 let activity = isRaining ? "Grab an umbrella" : "Dance in the rain";
 
 console.log(activity);
+
+//Question 2 
+
+// Object with properties
+let person = {
+  name: "Muna",
+  age: 20,
+  occupation: "Student",
+  hobbies: ["reading", "event planning", "hiking"]
+};
+
+// Loop through the properties of the object person
+for (let key in person) {
+  // Check object (not inherited)
+  if (person.hasOwnProperty(key)) {
+    console.log(key + ": " + person[key]);
+  }
+}
+
+//QUestion 3
+// Array of numbers
+let numbers = [2, 4, 6, 8, 10];
+
+// Using the map function to create a second array of doubled numbers
+let doubledNumbers = numbers.map(number => number * 2);
+
+console.log(doubledNumbers); // Output: [4, 8, 12, 16, 20]
+
+//Question 4 - 
+What is the DOM? What is meant by the DOM tree?
+
+The DOM (Document Object Model) in JavaScript is a programming interface (set of rules, protocols, tools provided by the 
+browser environment for JS to allow manipulation of HTML elements) for web development.
+The DOM represents the HTML documents as a tree-like structure, where each node 
+represents a part of the document, such as elements, attributes, or text.
+WHat that means is that it's a way to conceptualize and organize the elements, attributes, and 
+text content of a web page in a tree-like structure (root nodes, then element nodes, then att nodes, then text nodes)
+provides a structured and accessible representation of web documents!!
+
+//Question 5
+//5. What is a XSS attack? How do they work? How can you guard against them?
+XSS (Cross-Site Scripting) is a cyber attack where hostile code is injected into a web application, 
+usually through input fields like search boxes or comment sections. When users interact with the 
+compromised page, the injected code executes in their browsers, 
+allowing XXS attackers to steal sensitive information,
+or modify the page's content in some way or the other.
+
+//Question 6 
+//A. add a button with an id, when that button is clicked, change the button’s text
+
+//HTML
+<button id="myButton">Click me</button>
+<!-- Include the external JavaScript file --> looks like (<script src="script.js"></script>) 
+<script src="script.js"></script>
+//Javascrit code to change button text
+// Get the button element by its ID
+const button = document.getElementById('myButton');
+// Add event listener to the button for the 'click' event
+button.addEventListener('click', function() {
+  // Change the text of the button when clicked
+  button.textContent = 'Button clicked!';
+});
+
+//Q6
+//Letter B - add a list with several list items, if any list item is clicked, change all list items
+color to blue
+//create list in HTML
+<ul id="myList">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+</ul>
+<!-- Include the external JavaScript file -->
+<script src="script.js"></script>
+</body>
+</html>
+//JS
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all list items
+  const listItems = document.querySelectorAll('#myList li');
+  // Add click event listener to each list item
+  listItems.forEach(item => {
+    item.addEventListener('click', function() {
+      // Change the color of all list items to blue
+      listItems.forEach(li => {
+        li.style.color = 'blue';
+      });
+    });
+  });
+});
+
+//Q6 
+//Letter C - add a div that contains a second button element. When that button element is
+clicked, append a paragraph element with some text to the containing div after
+the second button.
+//HTML part
+<div id="container">
+  <button id="secondButton">Click me</button>
+</div>
+<!-- Include the external JavaScript file -->
+<script src="script.js"></script>
+</body>
+</html>
+//JS part 
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the container div and the second button
+  const container = document.getElementById('container');
+  const secondButton = document.getElementById('secondButton');
+  // Add click event listener to the second button
+  secondButton.addEventListener('click', function() {
+    // Create a new paragraph element
+    const paragraph = document.createElement('p');
+    // Add some text to the paragraph
+    paragraph.textContent = 'This is a new paragraph added dynamically!';
+    // Append the paragraph element to the container div after the second button
+    container.insertBefore(paragraph, secondButton.nextSibling);
+  });
+});
+
+//end
+
+
+
+
+
