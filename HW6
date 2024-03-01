@@ -1,0 +1,14 @@
+.1. HTTP stands for Hypertext Transfer Protocol. It allows communication between different systems. 
+From my understanding, HTTP is like a language that computers use to talk to each other over the internet in
+order for them to exchange information, like web pages or images (HTML FILES), between different places on the web. 
+For example, when you type a website address into your browser and hit enter, the browser sends a message using HTTP to 
+ask for that webpage from a server somewhere else on the internet. The server then sends back the webpage you requested, and your 
+browser shows it to you. So, HTTP is the way computers ask each other for web pages and other stuff online, and it's how they share that information back and forth.
+2. An API (Application Programming Interface ) is like a messenger that allows different software applications to talk to each other. 
+It defines the rules and methods parts of software can communicate with one another. I think of it like a menu in a restaurant – it tells you 
+what dishes (or functions) are available and how you can order them. Javascript uses API’s to get or send data, that is part of what makes it interactive. 
+JSON (JavaScript Object Notation) is a template for exchanging data between different systems. It's easy for both humans and computers to read and write. 
+JSON is a common template used when using APIs (as I stated above about APIs used with Javascript, JSON is the format) t's like a language that both computers and people understand, 
+ittis a common format used to exchange data between the client and the server when using APIs.
+3. AJAX ( Asynchronous JavaScript and XML) Is a great thing bc it sends and receive data from a server asynchronously, and this means that it can be done
+in the background without needing to reload or refresh the entire webpage! With AJAX, you can update parts of a webpage without interrupting anyone’s experience by having to refresh.
