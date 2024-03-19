@@ -1,0 +1,27 @@
+CISC 3300 Homework 8: validation, REST, Sessions and Cookies
+1. What does it mean to escape data? How does escaping data help us avoid malicious
+code?
+Escaping data means encoding special characters in our code or data so they arent recognized as code or aren’t reconized as HTML / JS code by browsers in web dev. 
+Escaping data helps us avoid malicious code because it ensures that user input is recognized as data and not code, so it prevents XXS code or malicious code injections making a browser more secure. If code is not properly escaped, it can leave data vulnerable to XXS attacks.
+
+2. Please read through: https://www.codecademy.com/article/what-is-rest
+a. What is REST? What is meant by Statelessness?
+REST stands for “Representational State Transfer” which is a style that web developers or anyone can use to design their network applications using HTTP. REST was introduced by Roy Fieding.
+Statelessness means that REST systems are “stateless” so servers do not store client or user data, so its simple and allows servers to handle requests independently. 
+
+b. What is a resource?
+A resource is any information that can be identified by URI (Uniform Resource Identifier) and modified using HTTP methods - resources are images, data, docs, user profiles, and anything else that can be stored or sent, etc.  
+c. Look at the section on Path design: In a RESTful architecture paradigm what
+would be the proper way to create a path for: (provide URL and HTTP method):
+i. getting a list of users?
+ GET http:// …url.  /customers
+ii. getting a particular user?
+  GET http://…url.. /customers/ {id}
+iii. saving a user?
+ POST http://…url. /customers
+
+3. What is a Cookie?
+A cookie is information that a website sends to a user’s web browser when they visit the site and usually if you accept the cookies the user’s info can be stores to remember a little bit of the user’s activity so they can be recognized and catered to in their next visit.
+    
+4. What is a Session?
+  A session is the time frame that a users spends with a site or web app. it begins when they visit and ends when they close it out or exit.
